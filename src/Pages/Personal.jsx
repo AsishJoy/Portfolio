@@ -7,11 +7,12 @@ function ProfilePage() {
       {/* Left Panel */}
       <div style={styles.left}>
         <img
-          src="https://via.placeholder.com/150"
-          alt="Profile"
-          style={styles.image}
-        />
-        <p style={styles.profileText}>Profile Photo</p>
+  src="/profile.jpg"
+  alt="PROFILE"
+  style={styles.image}
+/>
+
+        <p style={styles.profileText}>Asish Joy</p>
       </div>
 
       {/* Right Panel */}
@@ -35,15 +36,15 @@ function ProfilePage() {
 const styles = {
   container: {
     display: "flex",
-    minHeight: "100vh",
-    backgroundColor: "#f4f4f4",
+    minHeight: "10vh",
+    backgroundColor: "#62a09fff",
     padding: "40px",
   },
 
   /* Left */
   left: {
     width: "30%",
-    backgroundColor: "#111",
+    backgroundColor: "#080808ff",
     color: "white",
     borderRadius: "15px",
     display: "flex",
