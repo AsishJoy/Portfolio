@@ -27,7 +27,40 @@ function ProfilePage() {
             applications using React, Node.js, and MongoDB.
           </p>
         </div>
+
+        {/* Skills Section */}
+<div style={styles.skillsBox}>
+  <h3 style={styles.skillsTitle}>SKILLS</h3>
+  <hr />
+
+  <p>
+    <b>Programming Languages & Core Technologies :</b> HTML5, CSS3,
+    JavaScript (ES6+)
+  </p>
+
+  <p>
+    <b>Frameworks & Libraries :</b> React.js, Node.js, Express.js,
+    React Router, Redux / Context API, Multer, Socket.io, JWT,
+    Nodemailer
+  </p>
+
+  <p>
+    <b>Databases :</b> MongoDB
+  </p>
+
+  <p>
+    <b>Tools & Platforms :</b> Git, GitHub, VS Code
+  </p>
+
+  <p>
+    <b>Concepts & Architecture :</b> Middleware & API structure,
+    RESTful APIs, JSON / Axios / Fetch API, MVC architecture
+  </p>
+</div>
+
       </div>
+
+      
 
     </div>
   );
@@ -37,7 +70,7 @@ const styles = {
   container: {
     display: "flex",
     minHeight: "10vh",
-    backgroundColor: "#62a09fff",
+    backgroundColor: "#165f69ff",
     padding: "40px",
   },
 
@@ -93,5 +126,6 @@ const styles = {
     fontSize: "16px",
   },
 };
+
 
 export default ProfilePage;
