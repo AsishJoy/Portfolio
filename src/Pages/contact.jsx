@@ -16,7 +16,7 @@ const Contact = () => {
         
         {/* LinkedIn */}
         <a
-          href="https://www.linkedin.com/in/your-profile"
+          href="https://www.linkedin.com/in/asish-joy-a6a0ba306?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BMMElVWwlQ1qU9N9QbY86eA%3D%3D"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-gray-800 rounded-xl p-6 hover:scale-105 transition transform shadow-lg border border-gray-700"
@@ -34,7 +34,7 @@ const Contact = () => {
 
         {/* GitHub */}
         <a
-          href="https://github.com/your-username"
+          href="https://github.com/AsishJoy"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-gray-800 rounded-xl p-6 hover:scale-105 transition transform shadow-lg border border-gray-700"
