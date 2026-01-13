@@ -2,46 +2,63 @@ import React from "react";
 import Skills from "./skills";
 
 function ProfilePage() {
-  return (<>
-  <section id="about" className="bg-[#165f69ff] py-16 px-10">
-    <div className="flex bg-[#165f69ff] p-10">
-      
-      {/* Left Panel */}
-      <div className="w-[30%] bg-[#080808ff] text-white rounded-2xl flex flex-col items-center justify-center">
-        <img
-          src="/profile.jpg"
-          alt="PROFILE"
-          className="w-40 h-40 rounded-full object-cover"
-        />
-        <p className="mt-2 text-sm opacity-70">Asish Joy</p>
+  return (
+    <section
+      id="about"
+      className="relative min-h-screen animated-bg overflow-hidden px-10 py-20"
+    >
+      {/* Glow Orbs */}
+      <div className="absolute w-[500px] h-[500px] bg-indigo-500/30 rounded-full blur-[120px] 
+                      top-[-100px] left-[-100px] float-orb"></div>
+
+      <div className="absolute w-[400px] h-[400px] bg-pink-500/30 rounded-full blur-[120px] 
+                      bottom-[-100px] right-[-100px] float-orb"></div>
+
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
+
+      {/* Content */}
+      <div className="relative z-10 flex justify-center fade-up">
+        <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-3 gap-10">
+
+          {/* Profile Card */}
+          <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 
+                          shadow-xl hover:-translate-y-2 transition duration-500">
+            <div className="flex flex-col items-center text-center">
+              <img
+                src="/profile.jpg"
+                alt="Profile"
+                className="w-40 h-40 rounded-full object-cover border-4 border-gray-700"
+              />
+              <h2 className="text-white font-semibold text-xl mt-5">
+                ASISH JOY
+              </h2>
+              <p className="text-gray-400 text-sm mt-1">
+                MERN Stack Developer
+              </p>
+            </div>
+          </div>
+
+          {/* About Section */}
+          <div className="md:col-span-2 bg-white/5 backdrop-blur-xl rounded-3xl p-10 
+                          border border-white/10 shadow-xl hover:-translate-y-2 transition duration-500">
+            <h3 className="text-indigo-400 font-semibold text-lg mb-3">
+              About Me
+            </h3>
+            <p className="text-gray-300 leading-relaxed">
+              Passionate developer focused on building elegant, scalable and modern web
+              applications using React, Node.js, MongoDB and cloud technologies.
+            </p>
+          </div>
+
+        </div>
       </div>
 
-      {/* Right Panel */}
-      <div className="w-[70%] ml-8 bg-white rounded-2xl p-8 flex flex-col gap-5">
-
-        {/* Personal Details */}
-        <div className="border-2 border-gray-300 rounded-lg px-4 py-3 text-lg">
-          ASISH JOY
-        </div>
-
-        <div className="border-2 border-gray-300 rounded-lg px-4 py-3 text-lg">
-          MERN Stack Developer
-        </div>
-
-        <div className="border-2 border-gray-300 rounded-lg px-4 py-3 min-h-[120px] text-base">
-          <b>About</b>
-          <p className="mt-2">
-            Passionate developer focused on building responsive and modern web
-            applications using React, Node.js, and MongoDB.
-          </p>
-        </div>
+      {/* Skills */}
+      <div className="relative z-10 mt-20 fade-up">
+        <Skills />
       </div>
-
-    </div>
-    <Skills/>
     </section>
-    
-   </>
   );
 }
 

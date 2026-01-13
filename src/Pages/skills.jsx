@@ -2,7 +2,7 @@ import React from "react";
 
 function Skills() {
   return (
-    <div className=" bg-[#165f69ff] px-10 pb-10">
+    <div className="  px-10 pb-10">
 
       {/* White Container (same as ProfilePage right panel) */}
       <div className="bg-white rounded-2xl p-8 max-w-[100%] ml-auto">
@@ -14,48 +14,48 @@ function Skills() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
 
           {/* Skill Card */}
-          <div className="border-2 border-gray-300 rounded-lg p-4">
-            <h4 className="font-semibold text-sm mb-1">
+          <div className="bg-gray-800 rounded-xl p-6 hover:scale-105 transition transform shadow-lg border border-gray-700">
+            <h4 className="font-semibold text-sm mb-1 text-indigo-400">
               Programming Languages & Core Technologies
             </h4>
-            <p className="text-gray-700 text-sm">
+            <p className="text-gray-300 text-sm">
               HTML5, CSS3, JavaScript (ES6+)
             </p>
           </div>
 
-          <div className="border-2 border-gray-300 rounded-lg p-4">
-            <h4 className="font-semibold text-sm mb-1">
+          <div className="bg-gray-800 rounded-xl p-6 hover:scale-105 transition transform shadow-lg border border-gray-700">
+            <h4 className="font-semibold text-sm mb-1 text-indigo-400">
               Frameworks & Libraries
             </h4>
-            <p className="text-gray-700 text-sm">
+            <p className="text-gray-300 text-sm">
               React.js, Node.js, Express.js, Redux, React Router,
               Multer, Socket.io, JWT
             </p>
           </div>
 
-          <div className="border-2 border-gray-300 rounded-lg p-4">
-            <h4 className="font-semibold text-sm mb-1">
+          <div className="bg-gray-800 rounded-xl p-6 hover:scale-105 transition transform shadow-lg border border-gray-700">
+            <h4 className="font-semibold text-sm mb-1 text-indigo-400">
               Databases
             </h4>
-            <p className="text-gray-700 text-sm">
+            <p className="text-gray-300 text-sm">
               MongoDB
             </p>
           </div>
 
-          <div className="border-2 border-gray-300 rounded-lg p-4">
-            <h4 className="font-semibold text-sm mb-1">
+          <div className="bg-gray-800 rounded-xl p-6 hover:scale-105 transition transform shadow-lg border border-gray-700">
+            <h4 className="font-semibold text-sm mb-1 text-indigo-400">
               Tools & Platforms
             </h4>
-            <p className="text-gray-700 text-sm">
+            <p className="text-gray-300 text-sm">
               Git, GitHub, VS Code
             </p>
           </div>
 
-          <div className="border-2 border-gray-300 rounded-lg p-4 md:col-span-2">
-            <h4 className="font-semibold text-sm mb-1">
+          <div className="bg-gray-800 rounded-xl p-6 hover:scale-105 transition transform shadow-lg border border-gray-700">
+            <h4 className=" font-semibold text-sm mb-1 text-indigo-400">
               Concepts & Architecture
             </h4>
-            <p className="text-gray-700 text-sm">
+            <p className="text-gray-300 text-sm ">
               Middleware & API structure, RESTful APIs, MVC architecture,
               JWT Auth, Axios / Fetch API
             </p>
