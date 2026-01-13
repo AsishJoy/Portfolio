@@ -1,15 +1,17 @@
-import Navbar from "./Pages/Navbar";
+import Navbar from "./componets/Navbar";
+import Education from "./Pages/education";
 import ProfilePage from "./Pages/Personal";
+import Project from "./Pages/project";
+
 
 function App() {
   return (
     <>
       <Navbar />
       <ProfilePage />
-
-      {/* <section id="about" style={{ height: "100vh" }}>About Section</section>
-      <section id="projects" style={{ height: "100vh" }}>Projects Section</section>
-      <section id="contact" style={{ height: "100vh" }}>Contact Section</section> */}
+      <Project/>
+      <Education/>
+      
     </>
   );
 }
