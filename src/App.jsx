@@ -8,12 +8,13 @@ import Project from "./Pages/project";
 function App() {
   return (
     <>
+    <div className="min-h-screen bg-gray-900">
       <Navbar />
       <ProfilePage />
       <Project/>
       <Education/>
       <Contact/>
-      
+      </div>
     </>
   );
 }

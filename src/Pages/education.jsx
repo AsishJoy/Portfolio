@@ -3,12 +3,13 @@ import React from "react";
 function Education() {
   return (
     <section id="education" className="bg-gray-900 py-16 px-10">
-      <div className="bg-white rounded-2xl p-8 max-w-[95%] mx-auto flex flex-col gap-6">
+      <div className="bg-gray-800 rounded-2xl p-8 max-w-[95%] mx-auto flex flex-col gap-6">
 
-        <h2 className="text-lg font-semibold">Education & Experience</h2>
+        <h2 className="text-white font-semibold text-xl mt-5">Education</h2>
 
         {/* Internship */}
-        <div className="bg-gray-800 rounded-xl p-6 hover:scale-105 transition transform shadow-lg border text-indigo-400">
+        <div className="bg-gray-800 rounded-xl p-6  transition transform shadow-lg border text-indigo-400 bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 
+                          shadow-xl hover:-translate-y-2 transition duration-500">
           <h3 className="text-base font-semibold mb-2">
             MERN STACK Development Intern
           </h3>
@@ -28,7 +29,8 @@ function Education() {
         </div>
 
         {/* Degree */}
-        <div className="bg-gray-800 rounded-xl p-6 hover:scale-105 transition transform shadow-lg border border-gray-700">
+        <div className="bg-gray-800 rounded-xl p-6  transition transform shadow-lg border border-gray-700 bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 
+                          shadow-xl hover:-translate-y-2 transition duration-500">
           <h3 className="text-base font-semibold mb-2 text-indigo-400">
             B.Sc. Computer Science
           </h3>

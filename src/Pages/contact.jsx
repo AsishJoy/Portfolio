@@ -1,7 +1,8 @@
 import React from "react";
 
-const Contact = () => {
+function Contact (){
   return (
+     <section id="contact" className="py-20 px-10 bg-gray-900">
     <div className="min-h-screen bg-gray-900 text-white px-6 py-16">
       {/* Title */}
       <div className="text-center mb-12">
@@ -28,7 +29,7 @@ const Contact = () => {
             Connect with me professionally
           </p>
           <p className="text-indigo-300 mt-1">
-            linkedin.com/in/your-profile
+            linkedin.com/in/AsishJoy-profile
           </p>
         </a>
 
@@ -46,7 +47,7 @@ const Contact = () => {
             View my projects and code
           </p>
           <p className="text-indigo-300 mt-1">
-            github.com/your-username
+            github.com/AsishJoy
           </p>
         </a>
 
@@ -77,7 +78,7 @@ const Contact = () => {
         </div>
 
       </div>
-    </div>
+    </div></section>
   );
 };
 

@@ -5,11 +5,11 @@ function Skills() {
     <div className="  px-10 pb-10">
 
       {/* White Container (same as ProfilePage right panel) */}
-      <div className="bg-white rounded-2xl p-8 max-w-[100%] ml-auto">
+      <div className="bg-gray-900 rounded-2xl p-8 max-w-[100%] ml-auto">
 
-        <h2 className="text-lg font-semibold mb-6">
+        <h2 className="text-white font-semibold text-xl mt-5">
           Skills
-        </h2>
+        </h2><br />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
 
