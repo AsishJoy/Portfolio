@@ -90,7 +90,7 @@ function ProfilePage() {
               src="/profile.jpg"
               alt="Profile"
               className="h-[420px] w-auto rounded-2xl object-cover
-                         border-1 border-indigo-400 shadow-xl shadow-indigo-500/30  hover:-translate-y-2 transition duration-500 transition transform shadow-lg"
+                         border-0.7 border-blue-400 shadow-xl shadow-indigo-500/30  hover:-translate-y-2 transition duration-500 transition transform shadow-lg"
             />
           </div>
 
