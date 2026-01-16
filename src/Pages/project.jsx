@@ -36,6 +36,10 @@ function Project() {
             operations, structured data handling, and user-friendly UI
             implementation.
           </p>
+          <img src="student.jpeg" alt="no image" 
+          className="w-80 h-48 object-cover rounded-xl mt-4 border border-gray-700
+             shadow-md transition duration-500 hover:scale-90"
+              />
         </div>
 
         {/* ===== Project 2 ===== */}
@@ -61,6 +65,11 @@ function Project() {
             using React and managed backend logic with Node.js and Express
             following MVC architecture.
           </p>
+          <img src="download.jpeg" alt="no image"
+          className="w-80 h-48 object-cover rounded-xl mt-4 border border-gray-700
+             shadow-md transition duration-500 hover:scale-90"
+          />
+         
         </div>
 
       </div>

@@ -52,7 +52,13 @@ function Contact (){
         </a>
 
         {/* Email */}
-        <div className="bg-gray-800 rounded-xl p-6 hover:scale-105 transition transform shadow-lg border border-gray-700">
+       {/* Email */}
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=joyasish94@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-gray-800 rounded-xl p-6 hover:scale-105 transition transform shadow-lg border border-gray-700 block"
+        >
           <h2 className="text-xl font-semibold text-indigo-400">
             Email
           </h2>
@@ -62,7 +68,7 @@ function Contact (){
           <p className="text-indigo-300 mt-1">
             joyasish94@gmail.com
           </p>
-        </div>
+        </a>
 
         {/* Phone */}
         <div className="bg-gray-800 rounded-xl p-6 hover:scale-105 transition transform shadow-lg border border-gray-700">
@@ -83,3 +89,4 @@ function Contact (){
 };
 
 export default Contact;
+

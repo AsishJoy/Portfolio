@@ -5,7 +5,6 @@ import {
   Database,
   Wrench,
   Network,
-
   Braces,
   Palette,
   Atom,
@@ -14,6 +13,8 @@ import {
   Github,
   Monitor,
   ShieldCheck,
+  Terminal,
+  Cpu,
 } from "lucide-react";
 
 function Skills() {
@@ -24,16 +25,31 @@ function Skills() {
       items: [
         { name: "HTML", icon: <Braces size={36} /> },
         { name: "CSS", icon: <Palette size={36} /> },
-        { name: "JS", icon: <Braces size={36} /> },
+        { name: "Tailwind CSS", icon: <Palette size={36} /> },
+        { name: "JavaScript (ES6+)", icon: <Braces size={36} /> },
+        { name: "Async JS", icon: <Braces size={36} /> },
       ],
     },
     {
-      title: "Frameworks",
+      title: "Frontend",
       icon: <Layers size={26} />,
       items: [
-        { name: "React", icon: <Atom size={36} /> },
-        { name: "Node", icon: <Server size={36} /> },
-        { name: "Express", icon: <Network size={36} /> },
+        { name: "React.js", icon: <Atom size={36} /> },
+        { name: "Hooks", icon: <Atom size={36} /> },
+        { name: "Redux", icon: <Network size={36} /> },
+        { name: "Context API", icon: <Network size={36} /> },
+        { name: "Components", icon: <Layers size={36} /> },
+      ],
+    },
+    {
+      title: "Backend",
+      icon: <Server size={26} />,
+      items: [
+        { name: "Node.js", icon: <Server size={36} /> },
+        { name: "Express.js", icon: <Network size={36} /> },
+        { name: "REST APIs", icon: <Network size={36} /> },
+        { name: "Auth", icon: <ShieldCheck size={36} /> },
+        { name: "JWT", icon: <ShieldCheck size={36} /> },
       ],
     },
     {
@@ -41,23 +57,27 @@ function Skills() {
       icon: <Database size={26} />,
       items: [
         { name: "MongoDB", icon: <Database size={36} /> },
+        { name: "Mongoose", icon: <Database size={36} /> },
+        { name: "CRUD Ops", icon: <Wrench size={36} /> },
       ],
     },
     {
-      title: "Tools",
+      title: "Tools & Deployment",
       icon: <Wrench size={26} />,
       items: [
         { name: "Git", icon: <GitBranch size={36} /> },
         { name: "GitHub", icon: <Github size={36} /> },
         { name: "VS Code", icon: <Monitor size={36} /> },
+        { name: "Deployment", icon: <Server size={36} /> },
       ],
     },
     {
-      title: "Architecture",
-      icon: <Network size={26} />,
+      title: "Programming Languages",
+      icon: <Code2 size={26} />,
       items: [
-        { name: "REST", icon: <Network size={36} /> },
-        { name: "JWT", icon: <ShieldCheck size={36} /> },
+        { name: "C", icon: <Terminal size={36} /> },
+        { name: "C++", icon: <Cpu size={36} /> },
+        { name: "Python", icon: <Terminal size={36} /> },
       ],
     },
   ];
@@ -65,9 +85,7 @@ function Skills() {
   return (
     <div className="px-10 pb-10">
       <div className="bg-gray-900 rounded-2xl p-8 max-w-full ml-auto">
-        <h2 className="text-white font-semibold text-xl mb-6">
-          Skills
-        </h2>
+        <h2 className="text-white font-semibold text-xl mb-6">Skills</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((skill, index) => (
@@ -87,7 +105,7 @@ function Skills() {
                 </h4>
               </div>
 
-              {/* Bigger Skill Icons */}
+              {/* Skill Icons */}
               <div className="grid grid-cols-3 gap-5">
                 {skill.items.map((item, i) => (
                   <div
@@ -102,7 +120,7 @@ function Skills() {
                     >
                       {item.icon}
                     </div>
-                    <span className="text-xs">{item.name}</span>
+                    <span className="text-xs text-center">{item.name}</span>
                   </div>
                 ))}
               </div>
